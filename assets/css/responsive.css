@@ -1,0 +1,380 @@
+@media only screen and (max-width: 1024px) {
+  .scroll-container {
+    scroll-snap-type: none;
+  }
+  .home, .about, .about-more, .case-study, .testimonial {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+    height: auto;
+  }
+  .projects {
+    height: 70vh;
+  }
+  .projects-more {
+    height: 60vh;
+  }
+  .home, .about-content, .about-more-content-md, .about-more-content-sm, .case-study-content, .projects-content, .testimonial-content {
+    width: 90%;
+  }
+  .side-bar {
+    display: none;
+  }
+  .navbar {
+    visibility: visible;
+  }
+  .nav-links.active {
+    clip-path: circle(1800px at 0% 0%);
+    -webkit-clip-path: circle(1800px at 0% 0%);
+  }
+  .home {
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+  .home-content {
+    grid-template-columns: 1fr;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .my-potrait {
+    height: 340px;
+    width: 300px;
+    margin: auto;
+    background-color: transparent;
+  }
+  .my-potrait img {
+    min-width: 100%;
+  }
+  .home-text {
+    text-align: center;
+  }
+  .home-hr {
+    width: 20%;
+    margin: 10px auto;
+  }
+  .my-bio {
+    padding: 0;
+  }
+  .home-title {
+    font-size: 42px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .home-details {
+    width: 100%;
+    font-size: 16px;
+    margin: auto;
+  }
+  .home-sub {
+    font-size: 22px;
+    width: 255px;
+    margin: 10px auto;
+  }
+  @keyframes typewriter {
+    0%, 90%, 100% {
+      width: 0;
+    }
+    30%, 60% {
+      width: 255px;
+    }
+  }
+  .download-btn {
+    width: 170px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 8px;
+  }
+  .shadow-text {
+    display: none;
+  }
+  .section-header {
+    padding-top: 25px;
+  }
+  .section-title {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    text-align: center;
+  }
+  .about-content {
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+  }
+  .about-left {
+    width: 100%;
+    margin: auto;
+    padding: 10px 10px 40px 10px;
+  }
+  .skill-block {
+    margin: 15px auto;
+    padding: 10px 0 20px 0;
+  }
+  .skill-num {
+    font-size: 28px;
+  }
+  .skill-num sup {
+    font-size: 20px;
+  }
+  .about-hr {
+    width: 20%;
+  }
+  .skill-title {
+    font-size: 14px;
+  }
+  .about-right {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .skill-text {
+    font-size: 19px;
+  }
+  .skill-name {
+    font-size: 17px;
+  }
+  .skill-bar {
+    margin: 18px 0;
+  }
+  .skill-bar-header {
+    padding-bottom: 8px;
+  }
+  .about-more-title {
+    padding-top: 60px;
+    font-size: 23px;
+  }
+  .about-more-content-md {
+    display: none;
+  }
+  .about-more-content-sm {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+    width: 88%;
+  }
+  .edu-exp-details {
+    margin: 18px 0;
+  }
+  .edu-exp-details h3 {
+    font-size: 19px;
+  }
+  .edu-exp-details p {
+    font-size: 17px;
+  }
+  .case-study-content {
+    padding-top: 18px;
+    grid-template-columns: 310px 310px;
+    gap: 55px;
+  }
+  .case-study-grid-item.coming-soon {
+    display: none;
+  }
+  .projects-content {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+  }
+  .projects-more .projects-content {
+    padding-top: 0;
+  }
+  .pj-details {
+    width: 100%;
+    margin: auto;
+    order: 1;
+  }
+  .pj-details.right {
+    padding-left: 0;
+  }
+  .pj-details.left {
+    padding-left: 0;
+  }
+  .pj-text {
+    font-weight: 300;
+  }
+  .pj-text:first-child {
+    font-size: 15px;
+  }
+  .pj-text:last-child {
+    width: 100%;
+    font-size: 16px;
+  }
+  .pj-title {
+    font-size: 21px;
+  }
+  .testimonial {
+    padding-bottom: 32px;
+  }
+  .testimonial-content {
+    padding-top: 35px;
+  }
+  .msg-box {
+    width: 100%;
+    padding: 15px 25px;
+  }
+  .msg.md-text {
+    display: none;
+  }
+  .msg.xs-text {
+    display: block;
+  }
+  .client-info {
+    width: 100%;
+  }
+  .mySlides {
+    width: 100%;
+  }
+  .btn-gp {
+    width: 100%;
+  }
+  .upToTop-btn {
+    right: 45px;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .nav-links.active {
+    clip-path: circle(1000px at 0% 0%);
+    -webkit-clip-path: circle(1000px at 0% 0%);
+  }
+  .toggle span {
+    transition: 0.75s;
+  }
+  .section-header {
+    padding-top: 50px;
+  }
+  .about-more-title {
+    padding-top: 90px;
+  }
+  .home-content {
+    padding: 0;
+  }
+  .home-details span {
+    display: none;
+  }
+  .my-potrait {
+    width: 260px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .social-media {
+    margin: 5px 0;
+    padding-bottom: 5px;
+  }
+  .social-media img {
+    width: 28px;
+    height: 28px;
+  }
+  .skill-block {
+    margin: 10px 0;
+  }
+  .skill-bar-container {
+    margin-top: 15px;
+  }
+  .skill-bar {
+    margin: 19px 0;
+  }
+  .case-study-content {
+    padding-top: 28px;
+    grid-template-columns: 300px;
+    gap: 75px;
+    padding-bottom: 20px;
+  }
+  .case-study-item {
+    width: 300px;
+    height: 220px;
+  }
+  .case-study-item-1 img {
+    padding: 30px 13px;
+  }
+  .case-study-item-2 img {
+    padding: 20px 48px;
+  }
+  .case-study-item-3 img {
+    padding: 30px 13px;
+  }
+  .projects {
+    height: 110vh;
+  }
+  .projects-more {
+    height: 100vh;
+  }
+  .pj-img {
+    width: 300px;
+    height: auto;
+  }
+  .edu-exp-details {
+    margin-top: 10px;
+    margin-bottom: 38px;
+  }
+  .upToTop-btn {
+    right: 30px;
+  }
+  .client-info {
+    font-size: 15px;
+    padding-bottom: 45px;
+  }
+  .btn-gp {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 497px) {
+  .testimonial-content {
+    padding-top: 32px;
+    gap: 10px;
+  }
+  .msg-box {
+    padding: 10px 20px;
+  }
+  .msg {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .msg-box:after {
+    left: 100px;
+  }
+  .msg-profile {
+    padding: 25px;
+    border: 4px solid #1A1C26;
+    top: 85%;
+    left: 20px;
+  }
+  .msg-profile img {
+    width: 35px;
+    height: 44px;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .home {
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+  .home-title {
+    padding-top: 5px;
+  }
+  .about-content {
+    padding-top: 0;
+  }
+  .projects-content {
+    padding-top: 15px;
+  }
+  .pj-img {
+    width: 240px;
+    height: auto;
+  }
+  .pj-title {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    line-height: 160%;
+  }
+  .pj-text:first-child {
+    font-size: 11px;
+  }
+  .pj-text:last-child {
+    font-size: 12px;
+    line-height: normal;
+  }
+}

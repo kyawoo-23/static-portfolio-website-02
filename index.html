@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Su Myat Hnin (UI/UX & Product Designer)">
+	<meta name="description" content="I’m passionate about creating website and mobile application designs based on users’ preferences.  With over 4 years experience, I have acquired the skills and knowledge necessary to make projects successful.">
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Su Myat Hnin (UI/UX & Product Designer)">
+	<meta property="og:description" content="I’m passionate about creating website and mobile application designs based on users’ preferences.  With over 4 years experience, I have acquired the skills and knowledge necessary to make projects successful.">
+	<meta property="og:image" content="./assets/img/preview.png">
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="Su Myat Hnin (UI/UX & Product Designer)">
+	<meta property="twitter:description" content="I’m passionate about creating website and mobile application designs based on users’ preferences.  With over 4 years experience, I have acquired the skills and knowledge necessary to make projects successful.">
+	<meta property="twitter:image" content="./assets/img/preview.png">
+
+	<!-- Fav-icon -->
+	<link rel="icon" type="image/x-icon" href="./assets/icons/fav-icon.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/loading.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/modal.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+</head>
+<body oncontextmenu="return false">
+  <div class="loader">
+    <div class="loader-left"></div>
+    <div class="loader-right"></div>
+  </div>
+
+	<div class="side-bar">
+		<div class="side-bar-item active" onclick="navigateTo(this, '#home')">
+			<img class="side-bar-icon" src="./assets/icons/home.svg" alt="home-icon"/>
+		</div> 
+		<div class="side-bar-item" onclick="navigateTo(this, '#about')">
+			<img class="side-bar-icon" src="./assets/icons/about.svg" alt="about-icon"/>
+		</div>
+		<div class="side-bar-item" onclick="navigateTo(this, '#caseStudy')">
+			<img class="side-bar-icon" src="./assets/icons/case-study.svg" alt="case-study-icon"/>
+		</div>
+		<div class="side-bar-item" onclick="navigateTo(this, '#projects')">
+			<img class="side-bar-icon rocket" src="./assets/icons/projects.svg" alt="projects-icon"/>
+		</div>
+		<div class="side-bar-item" onclick="navigateTo(this, '#testimonial')">
+			<img class="side-bar-icon" src="./assets/icons/testimonial.svg" alt="testimonial-icon"/>
+		</div>
+	</div>
+	<div class="navbar">
+		<div class="toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<ul class="nav-links">
+		<li><a href="#home">
+			<img class="nav-icon" src="./assets/icons/home.svg" alt="home-icon" />
+			Home
+		</a></li>
+		<li><a href="#about">
+			<img class="nav-icon" src="./assets/icons/about.svg" alt="about-icon"/>
+			About Me
+		</a></li>
+		<li><a href="#caseStudy">
+			<img class="nav-icon"	src="./assets/icons/case-study.svg" alt="case-study-icon" />
+			Case Studies</a></li>
+		<li><a href="#projects">
+			<img class="nav-icon rocket" src="./assets/icons/projects.svg" alt="projects-icon" />
+			Completed Projects
+		</a></li>
+		<li><a href="#testimonial">
+			<img class="nav-icon" src="./assets/icons/testimonial.svg" alt="testimonial-icon" />
+			Testimonial
+		</a></li>
+	</ul>
+	<div class="scroll-container" onscroll="scrollControl(), scrollAni()">
+		<!-- Home Section -->
+		<section class="home" id="home">
+			<div class="home-content">
+				<div class="my-display">
+					<div class="my-potrait">
+						<img src="./assets/img/smh.png" alt="Su-Myat-Hnin"/>
+					</div>
+					<div class="social-media">
+						<img onclick="goTo('www.facebook.com/sumyat.hnin.96')" src="./assets/icons/facebook.svg" alt="facebook" />
+						<img onclick="goTo('www.linkedin.com/in/su-myat-hnin-793455191')" src="./assets/icons/linkedin.svg" alt="linkedin" />
+						<img onclick="goTo('www.behance.net/sumyathnin')" src="./assets/icons/behance.svg" alt="behance" />
+						<img onclick="goTo('www.dribbble.com/SU12345')" src="./assets/icons/dribbble.svg" alt="dribbble" />
+					</div>
+				</div>
+				<div class="my-bio">
+					<h1 class="home-text home-title">Su Myat Hnin</h1>
+          <hr class="home-hr"/>
+          <p class="home-text home-sub">UI/UX & Product Designer</p>
+          <p class="home-text home-details">
+						I’m passionate about creating website and mobile application designs based on users’ preferences.  <span>With over 4 years experience, I have acquired the skills and knowledge necessary to make projects successful.</span>
+          </p>
+					<a href="./assets/resume/Su Myat Hnin-Resume.pdf" download="Su Myat Hnin-Resume">
+						<button class="download-btn">Download Resume</button>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- About Section -->
+		<section class="about" id="about">
+      <div class="section-header">
+        <p class="shadow-text">Know Me More</p>
+        <p class="section-title">About Me</p>
+      </div>
+			<div class="about-content">
+        <div class="about-left">
+          <div class="skill-block js-scroll fade-in-bottom">
+            <p class="skill-num js-scroll" id="skill-num-exp">0<sup>+</sup></p>
+            <div class="skill-footer">
+              <hr class="about-hr" />
+              <p class="skill-title">Years of Experience</p>
+            </div>
+          </div>
+          <div class="skill-block js-scroll fade-in-bottom">
+            <p class="skill-num js-scroll" id="skill-num-pj">0<sup>+</sup></p>
+            <div class="skill-footer">
+              <hr class="about-hr" />
+              <p class="skill-title">Completed Projects</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="skill-text js-scroll fade-in-bottom">Skill <span>IN</span></p>
+          <div class="skill-bar-container">
+            <div class="skill-bar js-scroll fade-in-bottom">
+              <div class="skill-bar-header">
+                <p class="skill-name">Adobe XD</p>
+                <p class="skill-name skill-percent">95%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-done="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar js-scroll fade-in-bottom">
+              <div class="skill-bar-header">
+                <p class="skill-name">Figma</p>
+                <p class="skill-name skill-percent">90%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-done="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar js-scroll fade-in-bottom">
+              <div class="skill-bar-header">
+                <p class="skill-name">Photoshop</p>
+                <p class="skill-name skill-percent">80%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-done="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar js-scroll fade-in-bottom">
+              <div class="skill-bar-header">
+                <p class="skill-name">Sketch</p>
+                <p class="skill-name skill-percent">70%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-done="70"></div>
+              </div>
+            </div>
+            <div class="skill-bar js-scroll fade-in-bottom">
+              <div class="skill-bar-header">
+                <p class="skill-name">Illustrator</p>
+                <p class="skill-name skill-percent">85%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-done="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+		<!-- About More Section -->
+		<div class="about-more">
+      <p class="about-more-title">Education & Experience</p>
+      <div class="about-more-content-md js-scroll fade-in-bottom">
+				<div class="about-more-left">
+					<div class="knob-line knob-line-left">
+						<div class="edu-exp"><div class="knob"></div></div>
+						<div class="edu-exp"><div class="knob"></div></div>
+					</div>
+					<div class="edu-exp-container">
+						<div class="edu-exp">
+							<div class="duration">2021 (May - Nov)</div>
+							<div class="edu-exp-title">
+								Google UX Design Professional Course
+							</div>
+							<div class="edu-exp-sub">
+								Got lots of knowledge for the user experience, serving as a user advocate to ensure the highest level of usefulness, accessibility and user satisfaction.  <br />
+								<div class="view-cert" onclick="goTo('www.credly.com/badges/6d9defc5-d796-4802-bf56-4693f529db18/public_url')">
+									View Certificate
+									<span>
+										<img src="./assets/icons/right-arrow.svg" alt="right-arrows" />
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="edu-exp">
+							<div class="duration">2015 - 2019</div>
+							<div class="edu-exp-title">
+								Bachelor Degree (B.C.SC) - <span>UIT</span>
+							</div>
+							<div class="edu-exp-sub">
+								Presented personal & group website on the execution of individual or own ideas.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-more-right">
+					<div class="knob-line knob-line-right">
+						<div class="edu-exp"><div class="knob"></div></div>
+						<div class="edu-exp"><div class="knob"></div></div>
+						<div class="edu-exp"><div class="knob"></div></div>
+					</div>
+					<div class="edu-exp-container">
+						<div class="edu-exp">
+							<div class="duration">2021 - Running</div>
+							<div class="edu-exp-title">
+								Senior UI/UX  Designer - <span>Venus Lab</span>
+							</div>
+							<div class="edu-exp-sub">
+								Brainstorm user flow, sitemap, affinity diagram, wireframe for user experience and build design system, mockup, prototype for user interface.
+							</div>
+						</div>
+						<div class="edu-exp">
+							<div class="duration">2021 (Feb - Sep)</div>
+							<div class="edu-exp-title">
+								Product Designer - <span>Piyawasa</span>
+							</div>
+							<div class="edu-exp-sub">
+								Created mobile app design, dashboard design and themes for flight & hotel applications, business cards, etc.
+							</div>
+						</div>
+						<div class="edu-exp">
+							<div class="duration">2020 - 2021</div>
+							<div class="edu-exp-title">
+								UI/UX Designer - <span>Royal Majestic</span>
+							</div>
+							<div class="edu-exp-sub">
+								Developed mobile app design, dashboard design and themes for flight & hotel applications, business cards, etc.
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+			<div class="about-more-content-sm js-scroll fade-in-bottom">
+				<div class="edu-exp-details js-scroll fade-in-bottom">
+					<h3>2021 - Running</h3>
+					<p>1 year and counting</p>
+					<h3>Senior UI/UX  Designer - <span>Venus Lab</span></h3>
+					<p>Brainstorm user flow, sitemap, affinity diagram, wireframe for user experience and build design system, mockup, prototype for user interface.</p>
+				</div>
+				<div class="edu-exp-details js-scroll fade-in-bottom">
+					<h3>2021 (Feb - Sep)</h3>
+					<p>8 months</p>
+					<h3>Product Designer - <span>Piyawasa</span></h3>
+					<p>Created mobile app design, dashboard design and themes for flight & hotel applications, business cards, etc.</p>
+				</div>
+				<div class="edu-exp-details js-scroll fade-in-bottom">
+					<h3>2020 - 2021</h3>
+					<p>1 year</p>
+					<h3>UI/UX Designer - <span>Royal Majestic</span></h3>
+					<p>Developed mobile app design, dashboard design and themes for flight & hotel applications, business cards, etc.</p>
+				</div>
+				<div class="edu-exp-details js-scroll fade-in-bottom">
+					<h3>2021 (May - Nov)</h3>
+					<p>7 months</p>
+					<h3>Google UX Design Professional Course</h3>
+					<p>Got lots of knowledge for the user experience, serving as a user advocate to ensure the highest level of usefulness, accessibility and user satisfaction.</p>
+					<div class="view-cert sm" onclick="goTo('www.credly.com/badges/6d9defc5-d796-4802-bf56-4693f529db18/public_url')">
+						View Certificate
+						<span>
+							<img src="./assets/icons/right-arrow.svg" alt="right-arrows" />
+						</span>
+					</div>
+				</div>
+				<div class="edu-exp-details js-scroll fade-in-bottom">
+					<h3>2015 - 2019</h3>
+					<p>5 years</p>
+					<h3>Bachelor Degree (BC.sc) - <span>UIT</span></h3>
+					<p>Presented personal & group website on the execution of individual or own ideas.</p>
+				</div>
+			</div>
+    </div>
+		<!-- Case Study Section -->
+		<section class="case-study" id="caseStudy">
+      <div class="section-header">
+        <p class="shadow-text">Portfolio</p>
+        <p class="section-title">Case Studies</p>
+      </div>
+			<div class="case-study-content">
+				<div class="case-study-grid-item">
+					<div class="case-study-item-1 js-scroll fade-in-bottom" onclick="goTo('uxfol.io/p/sumyathnin1612/0328484e')">
+						<img src="./assets/img/live-plaza-case.png" alt="live-plaza img" />
+					</div>
+					<div class="case-study-title js-scroll fade-in-bottom">
+						<p>LIVEPlaza Ecommerce Website</p>
+						<p>Make accessible website for people who love online shopping</p>
+					</div>
+				</div>
+				<div class="case-study-grid-item">
+					<div class="case-study-item-2 js-scroll fade-in-bottom" onclick="goTo('uxfol.io/p/c4b4f5f8/03138e78')">
+						<img src="./assets/img/myanmar-apn-case.png" alt="myanmar-apn img" />
+					</div>
+					<div class="case-study-title js-scroll fade-in-bottom">
+						<p>MyanmarAPN Application</p>
+						<p>Can easily check internet plan, amount of bills as well as their current plan.</p>
+					</div>
+				</div>
+				<div class="case-study-grid-item coming-soon">
+					<div class="case-study-item-3 js-scroll fade-in-bottom coming-soon">
+						<p>Coming soon</p>
+					</div>
+					<div class="case-study-title" style="visibility: hidden;">
+						<p>MyanmarAPN Application</p>
+						<p>Can easily check internet plan, amount of bills as well as their current plan.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<div class="modalA">
+				<a target="_blank" rel="noopener" id="newTabImg">
+					<img class="modal-content" id="modalImg">
+				</a>
+			</div>
+			<div id="caption"></div>
+		</div>
+		<!-- Projects Section -->
+		<section class="projects" id="projects">
+      <div class="section-header">
+        <p class="shadow-text">Work</p>
+        <p class="section-title">Completed Projects</p>
+      </div>
+			<div class="projects-content">
+        <div class="pj-img js-scroll project-fade-in">
+					<img src="./assets/img/live-plaza-pj.png" alt="Liveplaza - Ecommerce Website" onclick="onClick(this);" />
+        </div>
+        <div class="pj-details right js-scroll project-fade-in">
+          <p class="pj-text">Website Design (Work As a Freelancer)</p>
+          <h3 class="pj-title">Liveplaza - Ecommerce Website</h3>
+          <p class="pj-text">This website is created for those customers who want to buy goods and houehold products online. What’s more, they can easily watch live videos on the website. I worked together with developers, project managers and marketing director.</p>
+        </div>
+      </div>
+		</section>
+		<!-- Projects More Section -->
+		<div class="projects-more">
+			<div class="projects-content">
+				<div class="pj-details left js-scroll project-fade-in">
+          <p class="pj-text">Mobile Application Design (Work as an Employee)</p>
+          <h3 class="pj-title">Myanmar APN - Internet Service Provider</h3>
+          <p class="pj-text">MMAPN is an application that help users who want to know about their internet package, check payment statements and get awesome promotions. I took part as an UI/UX designer and brainstormed ideas with senior mobile developer, product owner and stakeholders.</p>
+        </div>
+        <div class="pj-img js-scroll project-fade-in">
+          <img src="./assets/img/myanmar-apn-pj.png" alt="Myanmar APN - Internet Service Provider" onclick="onClick(this);" />
+        </div>
+      </div>
+		</div>
+		<div class="projects-more">
+			<div class="projects-content">
+				<div class="pj-img js-scroll project-fade-in">
+          <img src="./assets/img/baanova-pj.png" alt="Baanova - Travel & Tour" onclick="onClick(this);" />
+        </div>
+				<div class="pj-details right js-scroll project-fade-in">
+          <p class="pj-text">Mobile Application Design (Work As an employee)</p>
+          <h3 class="pj-title">Baanova - Travel & Tour</h3>
+          <p class="pj-text">This application is kind of an agency between travellers and airline. People can buy and look detail info of how many tickets there are, what the dates of travel are, and where the tickets go. I participated as an UI/UX designer and created ideas with developers, bussiness analyst and CTO.</p>
+        </div>
+      </div>
+		</div>
+		<div class="projects-more">
+			<div class="projects-content">
+				<div class="pj-details left js-scroll project-fade-in">
+          <p class="pj-text">Mobile Application Design (Work as a Freelancer)</p>
+          <h3 class="pj-title">Ezay - Online Market Application</h3>
+          <p class="pj-text">Ezay focus on rural customers and wholesale shops to allow buying on credit. Furthermore, they can search products on app and make payment easily. I cooperated with project manager and CEO of Ezay.</p>
+        </div>
+				<div class="pj-img js-scroll project-fade-in">
+          <img src="./assets/img/ezay-pj.png" alt="Ezay - Ecommerce Application" onclick="onClick(this);" />
+        </div>
+      </div>
+		</div>
+		<div class="projects-more">
+			<div class="projects-content">
+				<div class="pj-img js-scroll project-fade-in">
+          <img src="./assets/img/olive-pj.png" alt="Olive - Ecommerce Application" onclick="onClick(this);" />
+        </div>
+				<div class="pj-details right js-scroll project-fade-in">
+          <p class="pj-text">Website Design (Work as an Employee)</p>
+          <h3 class="pj-title">Olive - Ecommerce Application</h3>
+          <p class="pj-text">This application is designed and developed for customers to order household and construction products in Myanmar. I got involved as an UI/UX designer and discussed with clients, product owner and developers.</p>
+        </div>
+      </div>
+		</div>
+		<div class="projects-more">
+			<div class="projects-content">
+				<div class="pj-details left js-scroll project-fade-in">
+          <p class="pj-text">Website Design (Work as an Employee)</p>
+          <h3 class="pj-title">Mountaineer - Coffee Website</h3>
+          <p class="pj-text">Mountaineer coffee is one of the famous coffee shop in Myanmar. This website is designed and developed to let customers who want to place orders and make payment online. I took part as an UI/UX designer and had brainstorming session with CEO, product owner.</p>
+        </div>
+				<div class="pj-img js-scroll project-fade-in">
+          <img src="./assets/img/mountaineer-pj.png" alt="Mountaineer - Coffee Website" onclick="onClick(this);" />
+        </div>
+      </div>
+		</div>
+		<div class="projects-more">
+			<div class="projects-content">
+				<div class="pj-img js-scroll project-fade-in">
+          <img src="./assets/img/excellent-pj.png" alt="Excellent Queue - Panhlaing Hospital" onclick="onClick(this);" />
+        </div>
+				<div class="pj-details right js-scroll project-fade-in">
+          <p class="pj-text">Web App Design (Work as a Freelancer)</p>
+          <h3 class="pj-title">Excellent Queue - Panhlaing Hospital</h3>
+          <p class="pj-text">That dashboard design shows hospital staffs the way of managing patients. Moreovers, health care workers can certainly know how many patients are served, who are missed out by looking records using it. I joined in as an UI/UX designer and worked together with front-end developer and marketing executive.</p>
+        </div>
+      </div>
+		</div>
+		<div class="projects-more">
+			<div class="projects-content">
+				<div class="pj-details left js-scroll project-fade-in">
+          <p class="pj-text">Landing Page Website Design (Work as a Freelancer)</p>
+          <h3 class="pj-title">Quick Solution</h3>
+          <p class="pj-text">That website is one-page landing page for QS solution. I took part as an UI/UX designer to create that design and had lots of discussion with creative directors how to make attractive design for users.</p>
+        </div>
+				<div class="pj-img js-scroll project-fade-in">
+          <img src="./assets/img/quick-pj.png" alt="Quick Solution" onclick="onClick(this);" />
+        </div>
+      </div>
+		</div>
+		<!-- Testimonial Section -->
+		<section class="testimonial js-scroll" id="testimonial">
+      <div class="section-header">
+        <p class="shadow-text">Testimonial</p>
+        <p class="section-title">Client Speak</p>
+      </div>
+			<div class="testimonial-content">
+				<div class="mySlides mySlides1" id="mySlides1">
+					<div class="msg-box">
+						<div class="msg md-text">I would describe Su as a hardworking designer who has excellent fashion sense. She is a very quick learner and able to express her innate creativity in her designs. She also exudes an excellent attitude and exceptional discipline.  She was certainly a great pleasure to work with, and I would highly recommend her for any job.</div>
+
+						<div class="msg xs-text">I would describe Su as a hardworking designer who has excellent fashion sense. She is a very quick learner and able to express her innate creativity in her designs.  She was certainly a great pleasure to work with.</div>
+						<div class="msg-profile">
+							<img src="./assets/img/client-1.png" alt="client-1" />
+						</div>
+					</div>
+					<div class="client-info">
+						<p>Paing Zay Lynn Htet (Khan)</p>
+						<p>Product Owner @Venuslab</p>
+					</div>
+					<div class="msg-box">
+						<div class="msg md-text">Wonderful designer.  Su Myat is one of the most talented designers I have worked with.  Not only she can make great UI designs but also she has got experience in UX designs at such a young age. One thing I love about her is that she can change and adapt her thinking styles for her designs based on what product she is designing. If you got a chance to work with her, don’t think twice.</div>
+
+						<div class="msg xs-text">Su Myat is one of the most talented designers I have worked with.  One thing I love about her is that she can change and adapt her thinking styles for her designs based on what product she is designing.</div>
+						<div class="msg-profile">
+							<img src="./assets/img/client-2.png" alt="client-2" />
+						</div>
+					</div>
+					<div class="client-info">
+						<p>Zan Hla Htet (Mr.)</p>
+						<p>Co-founder / CTO @Baanova</p>
+					</div>
+				</div>
+
+				<div class="mySlides mySlides2" id="mySlides2">
+					<div class="msg-box">
+						<div class="msg md-text">Her quick learning ability makes her an excellent UI/UX designer.  Her creativeness and innovative ideas are her natural assets.  She is a punctual and professional designer and can do her professional tasks solely.  While working with Piyawasa Co., Ltd, she has performed her duties and responsibilities diligently.</div>
+
+						<div class="msg xs-text">Her quick learning ability, creativeness and innovative ideas makes her an excellent UI/UX designer.  While working with Piyawasa Co., Ltd, she has performed her duties and responsibilities diligently.</div>
+						<div class="msg-profile">
+							<img src="./assets/img/client-3.png" alt="client-3" />
+						</div>
+					</div>
+					<div class="client-info">
+						<p>Ye Pyei Phyo Oo @Erik Oo</p>
+						<p>Managing Director @Piyawasa</p>
+					</div>
+					<div class="msg-box" style="visibility: hidden;">
+						<div class="msg md-text">Her quick learning ability makes her an excellent UI/UX designer.  Her creativeness and innovative ideas are her natural assets.  She is a punctual and professional designer and can do her professional tasks solely.  While working with Piyawasa Co., Ltd, she has performed her duties and responsibilities diligently.</div>
+
+						<div class="msg xs-text">Her quick learning ability, creativeness and innovative ideas makes her an excellent UI/UX designer.  While working with Piyawasa Co., Ltd, she has performed her duties and responsibilities diligently.</div>
+						<div class="msg-profile">
+							<img src="./assets/img/client-3.png" alt="client-4" />
+						</div>
+					</div>
+					<div class="client-info" style="visibility: hidden;">
+						<p>Client 4</p>
+						<p>Product Owner</p>
+					</div>
+				</div>
+
+				<div class="btn-gp">
+					<img src="./assets/icons/arrow.svg" onclick="changeSlide('prev')" alt="prev" id="prevBtn" />
+					<img src="./assets/icons/arrow.svg" onclick="changeSlide('next')" alt="next" id="nextBtn" />
+				</div>
+			</div>
+		</section>
+
+		<div class="upToTop-btn" id="upBtn" onclick="topFunction()">
+			<img src="./assets/icons/top-arrow.svg" alt="top-arrow" />
+		</div>
+
+	</div>
+	
+	<script type="text/javascript" src="./assets/js/index.js" defer ></script>
+	<script type="text/javascript" src="./assets/js/side-bar.js" defer ></script>
+	<script type="text/javascript" src="./assets/js/scroll-animation.js" defer ></script>
+	<script type="text/javascript" src="./assets/js/modal.js" defer ></script>
+	<script type="text/javascript" src="./assets/js/slide.js" defer ></script>
+	<script type="text/javascript" src="./assets/js/upToTop.js" defer ></script>
+	<script type="text/javascript" src="./assets/js/smoothscroll.js" defer ></script>
+</body>
+</html>
