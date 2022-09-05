@@ -3,23 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="title" content="Su Myat Hnin (UI/UX & Product Designer)">
-	<meta name="description" content="I’m passionate about creating website and mobile application designs based on users’ preferences.  With over 4 years experience, I have acquired the skills and knowledge necessary to make projects successful.">
-	
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Su Myat Hnin (UI/UX & Product Designer)">
-	<meta property="og:description" content="I’m passionate about creating website and mobile application designs based on users’ preferences.  With over 4 years experience, I have acquired the skills and knowledge necessary to make projects successful.">
-	<meta property="og:image" content="./assets/img/preview.png">
-	
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="Su Myat Hnin (UI/UX & Product Designer)">
-	<meta property="twitter:description" content="I’m passionate about creating website and mobile application designs based on users’ preferences.  With over 4 years experience, I have acquired the skills and knowledge necessary to make projects successful.">
-	<meta property="twitter:image" content="./assets/img/preview.png">
 
 	<!-- Fav-icon -->
-	<link rel="icon" type="image/x-icon" href="./assets/icons/fav-icon.png">
+	<link rel="icon" type="image/x-icon" href="./assets/icons/fav-icon.svg">
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/loading.css">
@@ -27,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/modal.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
 
-	<title>Su Myat Hnin Portfolio</title>
+	<title>Simple Portfolio by Kko</title>
 </head>
 <body oncontextmenu="return false">
   <div class="loader">
@@ -40,13 +26,16 @@
 			<img class="side-bar-icon" src="./assets/icons/home.svg" alt="home-icon"/>
 		</div> 
 		<div class="side-bar-item" onclick="navigateTo(this, '#about')">
-			<img class="side-bar-icon" src="./assets/icons/about.svg" alt="about-icon"/>
+			<img class="side-bar-icon skillset" src="./assets/icons/skillset.svg" alt="skillset-icon"/>
+		</div>
+		<div class="side-bar-item" onclick="navigateTo(this, '#eduexp')">
+			<img class="side-bar-icon" src="./assets/icons/eduexp.svg" alt="edu-icon"/>
 		</div>
 		<div class="side-bar-item" onclick="navigateTo(this, '#caseStudy')">
-			<img class="side-bar-icon" src="./assets/icons/case-study.svg" alt="case-study-icon"/>
+			<img class="side-bar-icon" src="./assets/icons/casestudy.svg" alt="case-study-icon"/>
 		</div>
 		<div class="side-bar-item" onclick="navigateTo(this, '#projects')">
-			<img class="side-bar-icon rocket" src="./assets/icons/projects.svg" alt="projects-icon"/>
+			<img class="side-bar-icon rocket" src="./assets/icons/project.svg" alt="projects-icon"/>
 		</div>
 		<div class="side-bar-item" onclick="navigateTo(this, '#testimonial')">
 			<img class="side-bar-icon" src="./assets/icons/testimonial.svg" alt="testimonial-icon"/>
@@ -62,17 +51,21 @@
 	<ul class="nav-links">
 		<li><a href="#home">
 			<img class="nav-icon" src="./assets/icons/home.svg" alt="home-icon" />
-			Home
+			Who am I?
 		</a></li>
 		<li><a href="#about">
-			<img class="nav-icon" src="./assets/icons/about.svg" alt="about-icon"/>
-			About Me
+			<img class="nav-icon skillset" src="./assets/icons/skillset.svg" alt="skillset-icon"/>
+			Skill Set
+		</a></li>
+		<li><a href="#about">
+			<img class="nav-icon" src="./assets/icons/eduexp.svg" alt="edu-icon"/>
+			Education & Experience
 		</a></li>
 		<li><a href="#caseStudy">
-			<img class="nav-icon"	src="./assets/icons/case-study.svg" alt="case-study-icon" />
+			<img class="nav-icon"	src="./assets/icons/casestudy.svg" alt="case-study-icon" />
 			Case Studies</a></li>
 		<li><a href="#projects">
-			<img class="nav-icon rocket" src="./assets/icons/projects.svg" alt="projects-icon" />
+			<img class="nav-icon rocket" src="./assets/icons/project.svg" alt="projects-icon" />
 			Completed Projects
 		</a></li>
 		<li><a href="#testimonial">
@@ -89,14 +82,14 @@
 						<img src="./assets/img/smh-blur.png" alt="Su-Myat-Hnin"/>
 					</div>
 					<div class="social-media">
-						<img onclick="goTo('www.facebook.com/sumyat.hnin.96')" src="./assets/icons/facebook.svg" alt="facebook" />
-						<img onclick="goTo('www.linkedin.com/in/su-myat-hnin-793455191')" src="./assets/icons/linkedin.svg" alt="linkedin" />
-						<img onclick="goTo('www.behance.net/sumyathnin')" src="./assets/icons/behance.svg" alt="behance" />
-						<img onclick="goTo('www.dribbble.com/SU12345')" src="./assets/icons/dribbble.svg" alt="dribbble" />
+						<img src="./assets/icons/facebook.svg" alt="facebook" />
+						<img src="./assets/icons/linkedin.svg" alt="linkedin" />
+						<img src="./assets/icons/behance.svg" alt="behance" />
+						<img src="./assets/icons/dribbble.svg" alt="dribbble" />
 					</div>
 				</div>
 				<div class="my-bio">
-					<h1 class="home-text home-title">Su Myat Hnin</h1>
+					<h1 class="home-text home-title">My Name <br class="break" />(Susen)</h1>
           <hr class="home-hr"/>
           <p class="home-text home-sub">UI/UX & Product Designer</p>
           <p class="home-text home-details">
@@ -111,11 +104,12 @@
 		<!-- About Section -->
 		<section class="about" id="about">
       <div class="section-header">
-        <p class="shadow-text">Know Me More</p>
-        <p class="section-title">About Me</p>
+        <p class="shadow-text">What do I do</p>
+        <p class="section-title">Skill Set</p>
       </div>
-			<div class="about-content">
+      <div class="about-content">
         <div class="about-left">
+          <p class="skill-text js-scroll fade-in-bottom">Experienced <span>in</span></p>
           <div class="skill-block js-scroll fade-in-bottom">
             <p class="skill-num js-scroll" id="skill-num-exp">0<sup>+</sup></p>
             <div class="skill-footer">
@@ -132,7 +126,7 @@
           </div>
         </div>
         <div class="about-right">
-          <p class="skill-text js-scroll fade-in-bottom">Skill <span>IN</span></p>
+          <p class="skill-text js-scroll fade-in-bottom">Proficient <span>in</span></p>
           <div class="skill-bar-container">
             <div class="skill-bar js-scroll fade-in-bottom">
               <div class="skill-bar-header">
@@ -184,8 +178,11 @@
 			</div>
 		</section>
 		<!-- About More Section -->
-		<div class="about-more">
-      <p class="about-more-title">Education & Experience</p>
+		<section class="about-more" id="eduexp">
+			<div class="section-header">
+        <p class="shadow-text">What do I get</p>
+        <p class="section-title">Education & Experience</p>
+      </div>
       <div class="about-more-content-md js-scroll fade-in-bottom">
 				<div class="about-more-left">
 					<div class="knob-line knob-line-left">
@@ -200,7 +197,7 @@
 							</div>
 							<div class="edu-exp-sub">
 								Got lots of knowledge for the user experience, serving as a user advocate to ensure the highest level of usefulness, accessibility and user satisfaction.  <br />
-								<div class="view-cert" onclick="goTo('www.credly.com/badges/6d9defc5-d796-4802-bf56-4693f529db18/public_url')">
+								<div class="view-cert">
 									View Certificate
 									<span>
 										<img src="./assets/icons/right-arrow.svg" alt="right-arrows" />
@@ -280,7 +277,7 @@
 					<p>7 months</p>
 					<h3>Google UX Design Professional Course</h3>
 					<p>Got lots of knowledge for the user experience, serving as a user advocate to ensure the highest level of usefulness, accessibility and user satisfaction.</p>
-					<div class="view-cert sm" onclick="goTo('www.credly.com/badges/6d9defc5-d796-4802-bf56-4693f529db18/public_url')">
+					<div class="view-cert sm">
 						View Certificate
 						<span>
 							<img src="./assets/icons/right-arrow.svg" alt="right-arrows" />
@@ -294,7 +291,7 @@
 					<p>Presented personal & group website on the execution of individual or own ideas.</p>
 				</div>
 			</div>
-    </div>
+		</section>
 		<!-- Case Study Section -->
 		<section class="case-study" id="caseStudy">
       <div class="section-header">
@@ -303,7 +300,7 @@
       </div>
 			<div class="case-study-content">
 				<div class="case-study-grid-item">
-					<div class="case-study-item-1 js-scroll fade-in-bottom" onclick="goTo('uxfol.io/p/sumyathnin1612/0328484e')">
+					<div class="case-study-item-1 js-scroll fade-in-bottom">
 						<img src="./assets/img/live-plaza-case.png" alt="live-plaza img" />
 					</div>
 					<div class="case-study-title js-scroll fade-in-bottom">
@@ -312,7 +309,7 @@
 					</div>
 				</div>
 				<div class="case-study-grid-item">
-					<div class="case-study-item-2 js-scroll fade-in-bottom" onclick="goTo('uxfol.io/p/c4b4f5f8/03138e78')">
+					<div class="case-study-item-2 js-scroll fade-in-bottom">
 						<img src="./assets/img/myanmar-apn-case.png" alt="myanmar-apn img" />
 					</div>
 					<div class="case-study-title js-scroll fade-in-bottom">

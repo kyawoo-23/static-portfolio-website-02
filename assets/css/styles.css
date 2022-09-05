@@ -78,24 +78,28 @@ body {
 }
 
 .side-bar-item:nth-child(1):hover::after {
-  content: 'Home';
+  content: 'Who am I?';
   animation: slideInLtoR .5s ease-out .2s 1 forwards;
 }
 .side-bar-item:nth-child(2):hover::after {
-  content: 'About';
+  content: 'Skill Set';
   animation: slideInLtoR .5s ease-out .2s 1 forwards;
 }
 .side-bar-item:nth-child(3):hover::after {
+  content: 'Education & Experience';
+  animation: slideInLtoR .9s ease-out .2s 1 forwards;
+}
+.side-bar-item:nth-child(4):hover::after {
   content: 'Case Studies';
   animation: slideInLtoR .7s ease-out .2s 1 forwards;
 }
-.side-bar-item:nth-child(4):hover::after {
+.side-bar-item:nth-child(5):hover::after {
   content: 'Completed Projects';
   animation: slideInLtoR .9s ease-out .2s 1 forwards;
 }
-.side-bar-item:nth-child(5):hover::after {
+.side-bar-item:nth-child(6):hover::after {
   content: 'Testimonial';
-  animation: slideInLtoR .5s ease-out .2s 1 forwards;
+  animation: slideInLtoR .7s ease-out .2s 1 forwards;
 }
 
 .side-bar-item:hover {
@@ -104,19 +108,22 @@ body {
 }
 
 .side-bar-item:nth-child(1):hover {
-  animation: itemSlideOutSmall .4s ease-out .1s 1 forwards;
+  animation: itemSlideOutMedium .4s ease-out .1s 1 forwards;
 }
 .side-bar-item:nth-child(2):hover {
-  animation: itemSlideOutSmall .4s ease-out .1s 1 forwards;
+  animation: itemSlideOutSmall .3s ease-out .1s 1 forwards;
 }
 .side-bar-item:nth-child(3):hover {
-  animation: itemSlideOutMedium .6s ease-out .1s 1 forwards;
+  animation: itemSlideOutExtraLarge .6s ease-out .1s 1 forwards;
 }
 .side-bar-item:nth-child(4):hover {
-  animation: itemSlideOutLarge .7s ease-out .1s 1 forwards;
+  animation: itemSlideOutMedium .4s ease-out .1s 1 forwards;
 }
 .side-bar-item:nth-child(5):hover {
-  animation: itemSlideOutMedium .6s ease-out .1s 1 forwards;
+  animation: itemSlideOutLarge .5s ease-out .1s 1 forwards;
+}
+.side-bar-item:nth-child(6):hover {
+  animation: itemSlideOutMedium .4s ease-out .1s 1 forwards;
 }
 
 .side-bar-item:hover .side-bar-icon {
@@ -129,6 +136,11 @@ body {
   width: 23px;
   height: 23px;
   filter: invert(29%) sepia(0%) saturate(1%) hue-rotate(170deg) brightness(91%) contrast(86%);
+}
+
+.side-bar-icon.skillset {
+  width: 28px;
+  height: 28px;
 }
 
 .side-bar-icon.rocket {
@@ -224,6 +236,10 @@ body {
   margin-right: 18px;
 }
 
+.nav-icon.skillset {
+  width: 28px;
+  height: 28px;
+}
 .nav-icon.rocket {
   height: 32px;
 }
@@ -263,6 +279,9 @@ li.fade {
 }
 .nav-links li:nth-child(5) {
   transition: all 0.5s ease 0.7s;
+}
+.nav-links li:nth-child(6) {
+  transition: all 0.5s ease 0.85s;
 }
 
 .scroll-container {
@@ -346,8 +365,12 @@ li.fade {
 }
 
 .home-title {
-  font-size: 52px;
+  font-size: 50px;
   font-weight: 500;
+}
+
+.break {
+  display: none;
 }
 
 .home-sub {
@@ -580,21 +603,12 @@ li.fade {
   scroll-snap-stop: always;
 }
 
-.about-more-title {
-  font-weight: 500;
-  font-size: 28px;
-  color: #fff;
-  text-align: center;
-  padding-top: 48px;
-  margin-bottom: 30px;
-}
-
 .about-more-content-md {
   width: 80%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 52px;
+  margin-top: 15px;
 }
 
 .about-more-left {
@@ -709,6 +723,7 @@ li.fade {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 30px;
+  margin-top: 15px;
 }
 
 .edu-exp-details {
@@ -1109,7 +1124,7 @@ li.fade {
     width: 46px;
   }
   100% {
-    width: 120px;
+    width: 130px;
   }
 }
 
@@ -1128,6 +1143,15 @@ li.fade {
   }
   100% {
     width: 208px;
+  }
+}
+
+@keyframes itemSlideOutExtraLarge {
+  0% {
+    width: 46px;
+  }
+  100% {
+    width: 228px;
   }
 }
 

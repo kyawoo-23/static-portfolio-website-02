@@ -320,6 +320,15 @@
 }
 
 @media only screen and (max-width: 497px) {
+  .home-title {
+    font-size: 36px;
+  }
+  .break {
+    display: initial;
+  }
+  .about-content {
+    margin-top: 10px;
+  }
   .testimonial-content {
     padding-top: 32px;
     gap: 10px;
